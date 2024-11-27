@@ -114,3 +114,34 @@ contactform.addEventListener("submit", async function (e) {
     contactformsuccess.classList.remove('hide');
 
 })
+
+// при нажатті кнопки міняємо режим світлий на темний
+document.querySelector('.theme-switch').addEventListener('click',
+    function (e) {
+        e.preventDefault();
+
+        // Відбираємо іконки сонця і місяця
+        const sun = document.querySelector('.theme-switch .icon-light');
+        const moon = document.querySelector('.theme-switch .icon-dark');
+
+        // Перевіряємо чи є в body клас, який відповіжє за темну тему
+        if (document.body.classList.contains('dark-theme')) {
+
+            // Забираємо темну тему тим самим включаємо світлу
+            document.body.classList.remove('dark-theme');
+
+            // Змінюємо іконку
+            sun.classList.add('hide');
+            moon.classList.remove('hide');
+        } else {
+
+            // присвоєння класу боді при кліку на кнопку
+            document.body.classList.add('dark-theme');
+
+            // Змінюємо іконку
+            sun.classList.remove('hide');
+            moon.classList.add('hide');
+        }
+
+    }
+);

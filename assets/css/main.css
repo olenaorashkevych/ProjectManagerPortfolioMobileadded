@@ -114,6 +114,22 @@ a:hover {
     display: none !important;
 }
 
+.theme-switch {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+@media (max-width:600px) {
+    .theme-switch {
+        min-width: 42px;
+        min-height: 42px;
+    }
+}
+
+
 
 /** 2. Preloader
 *******************************************************************/
@@ -195,7 +211,9 @@ a:hover {
     }
 }
 
-
+li {
+    justify-content: space-evenly;
+}
 
 /** 3. Image Container
 *******************************************************************/
@@ -515,7 +533,13 @@ a:hover {
 
 #service .services-list li {
     font-size: 2.4rem;
-    line-height: 3.4em;
+    line-height: 1.4em;
+    padding-left: 76px;
+    min-height: 76px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #service .services-list li i {
@@ -530,7 +554,17 @@ a:hover {
 
     color: #fff;
     border-radius: 100px;
-    background: #111;
+    background-color: #000;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+@media (max-width:600px) {
+    #service .services-list li {
+        padding-left: 60px;
+        min-height: 58px;
+    }
 }
 
 
@@ -935,7 +969,7 @@ a:hover {
     content: '';
 
     border-radius: 100px;
-    background: #111;
+    background-color: #111;
 }
 
 #footer .social-icons li:after {
@@ -1028,4 +1062,31 @@ a:hover {
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
     color: #fff;
     transform: translateY(0);
+}
+
+#footer .social-icons li i {
+    background-color: transparent;
+}
+
+
+body.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-theme #footer .social-icons li:before,
+body.dark-theme #intro .container-mid a:before,
+body.dark-theme #contact #contact-form input,
+body.dark-theme #contact #contact-form textarea,
+body.dark-theme #contact #contact-form button:before {
+    background-color: #444;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+    color: #ffffff;
 }

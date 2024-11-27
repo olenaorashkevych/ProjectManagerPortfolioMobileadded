@@ -123,90 +123,107 @@ include 'admin/contentEditable.php';
                         <i class="fa fa-television" aria-hidden="true"></i>
                         <span contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="service-text-3"><?= $text["service-text-3"] ?></span>
                     </li>
-                    <!--<li class="scroll-animated-from-right"><i class="fa fa-square-o" aria-hidden="true"></i>UI & UX
-                        Design</li>
+                </ul>
+            </section>
 
+            <!-- /SERVICE -->
+
+            <!-- CONTACT -->
+            <section id="contact">
+
+
+                <h3 class="headline scroll-animated-from-right" contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-1"><?= $text["contacts-text-1"] ?></h3>
+
+
+                <!-- CONTACT LIST -->
+                <ul class="contact-list">
+
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <span contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-2"><?= $text["contacts-text-2"] ?></span>
+
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-3"><?= $text["contacts-text-3"] ?></span>
+                    </li>
 
                 </ul>
+                <!-- /CONTACT LIST -->
+
+
+                <!-- CONTACT FORM -->
+                <form id="contact-form">
+
+
+                    <input id="contact-form-name" type="text" name="name"
+                        class="form-control scroll-animated-from-right" placeholder="* Your Name" required>
+
+                    <input id="contact-form-email" type="text" name="email"
+                        class="form-control scroll-animated-from-right" placeholder="* Your Email" required>
+
+
+                    <textarea id="contact-form-message" name="message"
+                        class="form-control scroll-animated-from-right" placeholder="* Your Message"></textarea>
+
+                    <button type="submit" class="form-control scroll-animated-from-right">Send Mail</button>
+
+                </form>
+                <div class="success-message hide" id="contact-form-success">* The Email was Sent Successfully!
+                </div>
+                <!-- /CONTACT FORM -->
 
 
             </section>
-            <-- /SERVICE -->
-
-                    <!-- CONTACT -->
-                    <section id="contact">
+            <!-- /CONTACT -->
 
 
-                        <h3 class="headline scroll-animated-from-right" contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-1"><?= $text["contacts-text-1"] ?></h3>
+            <!-- FOOTER -->
+            <section id="footer">
 
 
-                        <!-- CONTACT LIST -->
-                        <ul class="contact-list">
-
-                            <li class="scroll-animated-from-right">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
-                                <span contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-2"><?= $text["contacts-text-2"] ?></span>
-
-                            </li>
-                            <li class="scroll-animated-from-right">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span contentEditable="<?= ($admin) ? 'true' : 'false' ?>" data-text-key="contacts-text-3"><?= $text["contacts-text-3"] ?></span>
-                            </li>
-
-                        </ul>
-                        <!-- /CONTACT LIST -->
+                <!-- SOCIAL ICONS -->
+                <ul class="social-icons scroll-animated-from-right">
 
 
-                        <!-- CONTACT FORM -->
-                        <form id="contact-form">
-
-
-                            <input id="contact-form-name" type="text" name="name"
-                                class="form-control scroll-animated-from-right" placeholder="* Your Name" required>
-
-                            <input id="contact-form-email" type="text" name="email"
-                                class="form-control scroll-animated-from-right" placeholder="* Your Email" required>
-
-
-                            <textarea id="contact-form-message" name="message"
-                                class="form-control scroll-animated-from-right" placeholder="* Your Message"></textarea>
-
-                            <button type="submit" class="form-control scroll-animated-from-right">Send Mail</button>
-
-                        </form>
-                        <div class="success-message hide" id="contact-form-success">* The Email was Sent Successfully!
-                        </div>
-                        <!-- /CONTACT FORM -->
-
-
-                    </section>
-                    <!-- /CONTACT -->
-
-
-                    <!-- FOOTER -->
-                    <section id="footer">
-
-
-                        <!-- SOCIAL ICONS -->
-                        <ul class="social-icons scroll-animated-from-right">
-
-
-                            <!-- <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
-                            <li><a href="https://www.linkedin.com/in/elizabeth-wood-323737152/"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/elizabeth-wood-323737152/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="theme-switch">
+                            <svg class="icon-light hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+
+                            <svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- /SOCIAL ICONS -->
 
 
-                        </ul>
-                        <!-- /SOCIAL ICONS -->
+                <p class="scroll-animated-from-right">© 2024 Branded by E | Design by Template Foundation</p>
 
 
-                        <p class="scroll-animated-from-right">© 2024 Branded by E | Design by Template Foundation</p>
-
-
-                    </section>
-                    <!-- /FOOTER -->
+            </section>
+            <!-- /FOOTER -->
 
 
         </div>
